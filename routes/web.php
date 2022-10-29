@@ -18,3 +18,4 @@ use App\Http\Controllers\PostController;
 Route::get("/", [PostController::class, "index"]);
 Route::get("/URL-1/create",   [PostController::class, "create"]);
 Route::get("/URL-1/{hensu4}", [PostController::class, "show"]);
+Route::post("/URL-1", [PostController::class, "store"]);
