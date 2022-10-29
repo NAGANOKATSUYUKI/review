@@ -11,6 +11,7 @@
     </head>
     <body class="antialiased">
         <h1>Review Name</h1>
+        <a href="/URL-1/create">作成ボタン</a>
         <div class="toko">
             @foreach( $hensu1 as $hensu2)
                 <div class="post">

@@ -9,6 +9,7 @@ class PostController extends Controller
 {
     public function index(Post $hensu1)//インポートしたPostをインスタンス化して$postとして使用。
     {
+        
         return view("posts/index")->with(["hensu1" => $hensu1->getPaginateByLimit(1)]);
     }
     
@@ -16,5 +17,10 @@ class PostController extends Controller
     {
         //dd($hensu4);
         return view("posts/show")->with(["hensu4"=> $hensu4]);
+    }
+    
+    public function create()
+    {
+        return view("posts/create");
     }
 }
