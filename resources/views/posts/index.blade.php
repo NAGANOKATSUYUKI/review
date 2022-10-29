@@ -12,14 +12,14 @@
     <body class="antialiased">
         <h1>Review Name</h1>
         <div class="toko">
-            @foreach( $posts as $hensu2)
+            @foreach( $hensu1 as $hensu2)
                 <div class="post">
                     <p class="id"> {{ $hensu2->id }}</p>
-                    <h2 class='title'>{{ $hensu2->title }}</h2>
+                    <a href="/URL-1/{{ $hensu2->id }}"><h2 class='title'>{{ $hensu2->title }}</h2></a>
                     <p class='body'>{{ $hensu2->body }}</p>
                 </div>
             @endforeach
         </div>
-        <div class="paginate">{{ $posts->links()}}</div>
+        <div class="paginate">{{ $hensu1->links()}}</div>
     </body>
 </html> 

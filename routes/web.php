@@ -15,4 +15,5 @@ use App\Http\Controllers\PostController;
 |
 */
 
-Route::get("/URL-1", [PostController::class, "index"]);
+Route::get("/", [PostController::class, "index"]);
+Route::get("/URL-1/{hensu4}", [PostController::class, "show"]);
