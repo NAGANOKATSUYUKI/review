@@ -43,4 +43,10 @@ class PostController extends Controller
         $hensu7->fill($input_post)->save();
         return redirect("/URL-1/" . $hensu7->id);
     }
+    
+    public function delete(Post $hensu2)
+    {
+        $hensu2->delete();
+        return redirect("/");
+    }
 }

@@ -21,3 +21,4 @@ Route::get("/URL-1/{hensu4}", [PostController::class, "show"]);
 Route::post("/URL-1", [PostController::class, "store"]);
 Route::get("/URL-1/{hensu5}/edit", [PostController::class, "edit"]);
 Route::put("/URL-1/{hensu7}" , [PostController::class, "update"]);
+Route::delete("/URL-1/{hensu2}", [PostController::class, "delete"]);
