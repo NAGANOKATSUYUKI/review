@@ -13,7 +13,7 @@
         <h1> Review name</h1>
         <form action="/URL-1/{{ $hensu5->id }}" method="POST">
             @csrf
-            @method=("PUT")
+            @method("PUT")
             <div class="title">
                 <h2> Title</h2>
                 <input type="text" name=post[title] placeholder="タイトル" value={{ $hensu5->title}}>

@@ -19,8 +19,14 @@
                     <p class="body">{{ $hensu4->body }}</p>
                 </div>
         </div>
+        
+        <div class="footer">
+            <a href="/URL-1/{{ $hensu4->id }}/edit">編集</a>
+        </div>
+        
         <div class="footer">
             <a href="/">戻る</a>
         </div>
+        
     </body>
 </html>
